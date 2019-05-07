@@ -67,8 +67,8 @@ for (line in parsed) {
 }
 
 context('Module 01')
-test_that('Require the readr package. @readr-package', {
-  expect(exists('readr_package'), 'Have you required the `readr` package in `time.R` with the `library()` function?')
+test_that('Load the readr package. @readr-package', {
+  expect(exists('readr_package'), 'Have you loaded the `readr` package in `time.R` with the `library()` function?')
 })
 
 test_that('Read the titles data. @read-csv-titles', {
@@ -81,8 +81,8 @@ test_that('Read the stats data. @read-csv-stats', {
   expect(isTRUE(all_equal(user$stats, solution$stats)), 'Are you using the `read_csv()` function from the `readr` package to read in the `stats.csv` file?')
 })
 
-test_that('Require the dplyr package. @dplyr-package', {
-  expect(exists('dplyr_package'), 'Have you required the `dplyr` package in `time.R` with the `library()` function?')
+test_that('Load the dplyr package. @dplyr-package', {
+  expect(exists('dplyr_package'), 'Have you loaded the `dplyr` package in `time.R` with the `library()` function?')
 })
 
 test_that('Join titles and stats. @join-titles-stats', {
@@ -113,8 +113,8 @@ test_that('Joining year published. @join-dickens-published', {
   expect(isTRUE(all_equal(user$time, solution$time)), 'Are you joining the `dickens_stats` and `published` data frames with `full_join()`?')
 })
 
-test_that('Require the tidyr package. @tidyr-package', {
-  expect(exists('tidyr_package'), 'Have you required the `tidyr` package in `time.R` with the `library()` function?')
+test_that('Load the tidyr package. @tidyr-package', {
+  expect(exists('tidyr_package'), 'Have you loaded the `tidyr` package in `time.R` with the `library()` function?')
 })
 
 test_that('Reshaping data frames. @reshape', {
@@ -122,8 +122,8 @@ test_that('Reshaping data frames. @reshape', {
   expect(isTRUE(all_equal(user$time_long, solution$time_long)), 'Are you using the `gather()` function to reshape the `time` data frame?')
 })
 
-test_that('Require the ggplot2 package. @ggplot2-package', {
-  expect(exists('ggplot2_package'), 'Have you required the `ggplot2` package in `time.R` with the `library()` function?')
+test_that('Load the ggplot2 package. @ggplot2-package', {
+  expect(exists('ggplot2_package'), 'Have you loaded the `ggplot2` package in `time.R` with the `library()` function?')
 })
 
 test_that('Initialize a Plot Object. @ggplot', {
