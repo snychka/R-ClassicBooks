@@ -20,7 +20,7 @@ ProjectReporter <- R6::R6Class("ProjectReporter",
       } else {
         remove_backtrace <- gsub('\\d+:(.*)', '', format(result))
         quoted <- trim(gsub('"', '`', format(remove_backtrace)))
-        self$test_results <- add_row(test = '', self$test_results, tag = '@error', passed = -1, result = quoted, test_number = 0)
+        self$test_results <- add_row(test = '', self$test_results, tag = '@error', passed = -1, result = format(result), test_number = 0)
       }
     },
   
