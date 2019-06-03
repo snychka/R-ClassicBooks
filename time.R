@@ -9,9 +9,10 @@ stats <- read_csv('data/stats.csv')
 
 # https://www.rdocumentation.org/packages/dplyr/versions/0.7.8/topics/join
 books <- inner_join(titles, stats)
+
 # https://www.rdocumentation.org/packages/dplyr/versions/0.7.8/topics/filter
-# dickens <- filter(books, author == 'Dickens, Charles')
-dickens <- filter(books, author == 'blargh')
+dickens <- filter(books, author == 'Dickens, Charles')
+# dickens <- filter(books, author == 'blargh')
 
 # alternate way of doing above, so 2.6
 # https://www.rdocumentation.org/packages/stringr/versions/1.4.0/topics/str_detect
